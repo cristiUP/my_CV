@@ -65,6 +65,32 @@ a {
   color: #f1f1f1;
 }
 
+/* Profile picture polaroid style, but without caption */
+
+.polaroid {
+  background: #fff;
+  padding: 0.87rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);   
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.item {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(100%);
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.5s;
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg);
+  transition: all 0.5s;
+} 
+
 /* Contact section starts here */
 
 .sidebar-contact-section {
@@ -127,7 +153,6 @@ a {
 	width: 85%;
 	animation: css 2s;
 }
-
 .sidebar-skills-section .javascript{ /*set skills and animation of javascript*/
 	width: 10%;
 	animation: javascript 2s;
@@ -136,7 +161,6 @@ a {
   width: 65%;
   animation: bootstrap 2s;
 }
-
 
 @keyframes html{ /*animate html skills*/
 	0%{
@@ -220,7 +244,6 @@ a {
 	}
 }
 
-
 /* Main section starts here */
 
 .main-container {
@@ -248,7 +271,6 @@ a {
   vertical-align: middle;
   color:#2187e7;
   font-size: .5rem;
-
 }
 .main-container .title {
   display: flex;
@@ -260,7 +282,6 @@ a {
   display: flex;
   align-items: center;
   background-color: #f9f9f9;
-
 }
 .title .icons-style {
   text-align: center;
@@ -278,7 +299,6 @@ a {
   text-align: right;
   margin-left: .5rem;
   color: #353b48;
-
 }
 
 .main-container .icon-title {
@@ -287,19 +307,18 @@ a {
 .main-container .company-title {
   padding-right: 1rem;
   flex: 2;
-
 }
-.main-container h1 {
+.main-container h2 {
   font-size: 1.6rem;
   font-weight: 400;
 }
-.main-container h2 {
+.main-container h3 {
   color: #353b48;
   font-weight: 400;
   font-size: 1.27rem;
   line-height: 2.25rem;
 }
-.main-container h3 {
+.main-container h4 {
   color:#353b48;
   font-weight: 400;
   font-size: 1.125rem;
@@ -314,34 +333,6 @@ a {
   background-color: transparent;
   color: #666;
 }
-.photo {
-    text-align: center;
-}
-
-/* Profile picture polaroid style, but without caption */
-
-
-.polaroid {
-    background: #fff;
-    padding: 0.87rem;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);   
-  }
-  .polaroid > img{
-    max-width: 100%;
-    height: auto;
-  }
-  .item {
-    display: inline-block;
-    filter: grayscale(100%);
-    transform: scale(0.8, 0.8) rotate(-5deg);
-    transition: all 0.5s;
-  }
-
-  .item:hover {
-    filter: none;
-    transform: scale(1, 1) rotate(0deg);
-    transition: all 0.5s;
-  } 
 
 @media only screen and (min-width:600px){
     body {
