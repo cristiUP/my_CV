@@ -20,7 +20,7 @@ a {
 /* Background and divider patterns */
 
 .pattern-diagonal-stripes-sm {
-  background:repeating-linear-gradient(45deg, transparent, transparent 10px, currentColor 10px, currentColor calc(2 * 10px))
+  background:repeating-linear-gradient(135deg, transparent, transparent 5px, currentColor 5px, currentColor calc(2 * 5px))
 }
 .pattern-dots-sm {
   background-image:radial-gradient(currentColor .5px, transparent .5px);background-size:calc(10 * .5px) calc(10 * .5px)
@@ -28,14 +28,13 @@ a {
 
 /* General Sidebar stuff here */
 .sidebar {
-    background-color: #151515;
+    background-color: #131313;
     color: #111;
     padding-bottom: 1rem;
 }
 .sidebar-titles {
   min-width: max-content;
   text-align: center;
-
   margin: 2vh 3vw;
 }
 .sidebar-separator {
@@ -59,6 +58,13 @@ a {
   margin: 5px auto;
   font-weight: 300;
   font-size: 1rem;
+} 
+.sidebar h4 {
+  color: #f1f1f1;
+  margin: 5px auto;
+  font-weight: 300;
+  font-size: 0.87rem;
+  display: inline;
 } 
 .sidebar p {
   margin: 0;
@@ -123,6 +129,16 @@ a {
   display: none;
 }
 
+.sidebar .soft-skills li::before {
+  display: inline-block;
+  content: "\f101";
+  font-family: 'FontAwesome';
+  padding: .5rem;
+  vertical-align: middle;
+  color:#2187e7;
+  font-size: .5rem;
+}
+
 /* Skills and language sections starts here */
 
 .sidebar ul {
@@ -163,6 +179,10 @@ a {
   width: 65%;
   animation: bootstrap 2s;
 }
+.sidebar .react { /*set skills and animation of react*/
+  width: 50%;
+  animation: react 2s;
+}
 
 @keyframes html{ /*animate html skills*/
 	0%{
@@ -200,6 +220,17 @@ a {
 	100%{
 		width: 65%;
 	}
+  
+}
+@keyframes react{ /*animate react skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+  
 }
 @keyframes romanian{ /*animate ro skills*/
 	0%{
@@ -258,6 +289,12 @@ a {
   display: flex;
   flex-direction: column;
   color:#353b48;
+}
+.main-section p {
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  text-indent: 1rem;
+  text-align: justify;
 }
 .main-section ul {
   margin-block-start: 0;
